@@ -1,0 +1,25 @@
+{
+  "name": "beremiz",
+  "displayName": "beremiz-brz-syntax",
+  "description": "Language support for Beremiz language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "beremiz",
+      "aliases": ["Beremiz", "beremiz"],
+      "extensions": [".brz"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "beremiz",
+      "scopeName": "source.brz",
+      "path": "./syntaxes/beremiz.tmLanguage.json"
+    }]
+  }
+}

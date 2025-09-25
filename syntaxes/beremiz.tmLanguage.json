@@ -1,0 +1,104 @@
+{
+  "scopeName": "source.brz",
+  "name": "Beremiz",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#operators" },
+    { "include": "#numbers" },
+    { "include": "#strings" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control",
+          "match": "\\b(for|if|do|elif|else|end)\\b"
+        },
+        {
+          "name": "variable.language",
+          "match": "\\b(dup|eq|neq|write|writeln)\\b"
+        },
+        {
+          "name": "constant.language",
+          "match": "\\b(nil|true|false)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": "[+\\-*/<>]"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.integer.decimal",
+          "match": "\\b[-+]?[0-9]+(?:_[0-9]+)*\\b"
+        },
+        {
+          "name": "constant.numeric.integer.int64",
+          "match": "\\b-?922337203685477580[78]\\b"
+        },
+        {
+          "name": "constant.numeric.float",
+          "match": "(?:\\b[-+]?(?:[0-9]*\\.[0-9]+|[0-9]+\\.[0-9]*)\\b)"
+        },
+        {
+          "name": "constant.numeric.hex",
+          "match": "\\b0[xX][0-9a-fA-F]+(?:_[0-9a-fA-F]+)*\\b"
+        },
+        {
+          "name": "constant.numeric.octal",
+          "match": "\\b0[oO]?[0-7]+(?:_[0-7]+)*\\b"
+        },
+        {
+          "name": "constant.numeric.binary",
+          "match": "\\b0[bB][01]+(?:_[01]+)*\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign",
+          "match": "#(?!\\[).*$"
+        },
+        {
+          "name": "comment.block",
+          "begin": "#\\[",
+          "end": "\\]#"
+        }
+      ]
+    }
+  }
+}
