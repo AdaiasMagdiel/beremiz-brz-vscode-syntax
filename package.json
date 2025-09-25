@@ -31,6 +31,11 @@
       }
     ]
   },
+  "author": {
+    "name": "Adaías Magdiel",
+    "email": "eu@adaiasmagdiel.com",
+    "url": "https://github.com/AdaiasMagdiel"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/AdaiasMagdiel/beremiz-brz-vscode-syntax.git"
