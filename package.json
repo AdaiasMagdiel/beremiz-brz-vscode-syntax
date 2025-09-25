@@ -10,16 +10,29 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "beremiz",
-      "aliases": ["Beremiz", "beremiz"],
-      "extensions": [".brz"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "beremiz",
-      "scopeName": "source.brz",
-      "path": "./syntaxes/beremiz.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "beremiz",
+        "aliases": [
+          "Beremiz",
+          "beremiz"
+        ],
+        "extensions": [
+          ".brz"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "beremiz",
+        "scopeName": "source.brz",
+        "path": "./syntaxes/beremiz.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdaiasMagdiel/beremiz-brz-vscode-syntax.git"
   }
 }
