@@ -13,11 +13,11 @@
       "patterns": [
         {
           "name": "keyword.control",
-          "match": "\\b(for|if|do|elif|else|end)\\b"
+          "match": "\\b(for|if|do|elif|else|end|type)\\b"
         },
         {
           "name": "variable.language",
-          "match": "\\b(dup|eq|neq|write|writeln)\\b"
+          "match": "\\b(dup|eq|neq|write|writeln|over|swap|depth|dump|clear|rot|pop)\\b"
         },
         {
           "name": "constant.language",
