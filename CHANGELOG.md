@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [0.0.3] - 2025-09-29
+
+### Added
+
+- Added `type` to `keyword.control`.
+- Added stack/utility words (`over`, `swap`, `depth`, `dump`, `clear`, `rot`, `pop`) to `variable.language`.
+
+### Changed
+
+- Expanded `variable.language` group to include all stack manipulation and I/O words for consistent highlighting.
+
 ## [0.0.2] - 2025-09-25
 
 ### Added
