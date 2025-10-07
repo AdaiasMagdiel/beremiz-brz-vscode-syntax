@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [0.0.4] - 2025-10-07
+
+### Added
+
+- Added logical operators `and`, `or`, and `not` highlighted as `keyword.operator.logical`.
+- Added `define` keyword to `keyword.control`.
+- Added arithmetic operator highlighting for `**` (exponentiation) and `%` (modulo).
+- Added comparison operators `<=` and `>=` to `keyword.operator.comparison`.
+- Added general identifier highlighting rule (`variable.language`) to match valid names (`[a-zA-Z_][a-zA-Z0-9_+]*`).
+
+### Changed
+
+- Changed built-in stack and I/O words (`dup`, `eq`, `neq`, `write`, `writeln`, `over`, `swap`, `depth`, `dump`, `clear`, `rot`, `pop`) to use `keyword.other` for better visibility across themes.
+- Split operator patterns into logical, comparison, and arithmetic groups for finer syntax coloring.
+- Simplified numeric float matching pattern for better readability and consistency.
+- Removed obsolete `constant.numeric.integer.int64` rule (unnecessary edge case).
+
 ## [0.0.3] - 2025-09-29
 
 ### Added
